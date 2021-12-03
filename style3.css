@@ -1,0 +1,1055 @@
+html{
+	margin: 0;
+	font-family: Verdena, sans-serif;
+}
+body{
+	background-image: url("images/travel2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	margin: 50px 0 0 0;
+	background-color: #fff;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.menu .curr_leng{
+	margin-left: 50px;
+}
+.menu .curr_leng .det{
+	line-height: 50px;
+}
+.menu .curr_leng ul{
+	list-style: none;
+}
+.menu .curr_leng ul li{
+	float: left;
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	color: black;
+	line-height: 30px;
+}
+.menu .curr_leng ul li ul li{
+	display: none;
+}
+.menu .curr_leng ul li:hover ul li{
+	display: block;
+	background-color: #FFFFFF;
+}
+.menu .choose{
+	float: right;
+}
+.menu .choose .registr{
+	line-height: 50px;
+	margin-right: 80px;
+}
+.second-part{
+	width: 1100px;
+	height:120px;
+	background-color: rgba(0,0,0,0.8);
+	margin-left: 130px;
+}
+.second-part .sec-part-one{
+	float: left;
+}
+.second-part .sec-part-one img{
+	margin: 25px 0 0 25px;
+	float: left;
+}
+.second-part .sec-part-one h1{
+	float: left;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-left: 5px;
+}
+.second-part .sec-part-one p{
+	float: left;
+	color: white;
+	text-transform: uppercase;
+	margin-top: -25px;
+	margin-right: 50px;
+	margin-left: 95px;
+	font-size: 13.5px;
+}
+.second-part .sec-part-two{
+	float: right;
+	line-height: 120px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-right: 30px;
+}
+.second-part .sec-part-two .main{
+	color: white;
+	font-weight: 100;
+	margin: 10px;
+}
+.second-part .sec-part-two .main:hover{
+	color: grey;
+}
+.thirdpart .travel-styles{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 350px;
+}
+.thirdpart .travel-styles h1{
+	font-size: 90px;
+	font-weight: 700;
+	text-shadow: 0 5px 5px rgba(216, 216, 216, 0.75);
+	animation-name: text;
+	animation-duration: 2s;
+}
+.thirdpart .travel-styles p{
+	font-size: 40px;
+	font-weight: 100;
+	margin-top: -50px;
+	animation-name: text1;
+	animation-duration: 2s;
+}
+@keyframes text{
+  0%{margin-left: -500px;}
+ 50%{margin-left: 50px;}
+ 100%{margin-left: 0;}
+}
+@keyframes text1{
+  0%{margin-left: -700px;}
+ 50%{margin-left: 50px;}
+ 100%{margin-left: 0;}
+}
+.thirdpart .travel-styles span{
+	font-weight: 800;
+}
+.thirdpart .selector{
+	float: right;
+	margin-right: 130px;
+}
+.thirdpart .selector select{
+	width: 200px;
+	height: 50px;
+	background-color: rgba(0,0,0, 0.8);
+	color: white;
+	text-transform: capitalize;
+	border: 1px solid grey;
+	padding-left: 5px;
+	margin: 15px;
+	cursor: pointer;
+}
+.thirdpart .selector select option{
+	background-color: white;
+	color: black;
+	padding-left: 5px;
+}
+.thirdpart .selector .longer{
+	width: 250px;
+}
+.thirdpart .selector .btn button{
+	width: 170px;
+	height: 40px;
+	color: white;
+	background-color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 100;
+	border: none;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-left: 280px;
+	line-height: 40px;
+}
+.thirdpart .selector .btn button:hover{
+	opacity: 0.8;
+}
+.rotation{
+	background-color: white;
+	position: relative;
+}
+.rotation:before{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 305px;
+	top: 300px;
+	left: 0;
+	background: white;
+	transform: skewY(-7deg);
+}
+.rotation:after{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height:305px;
+	top: 300px;
+	right:0;
+	background: white;
+	transform: skewY(7deg);
+}
+.fourtpart{
+	width: 100%;
+	height: auto;
+	margin-top: 600px;
+	background-color: white;
+}
+.fourtpart .box{
+	margin-left: 70px;
+	display: flex;
+	flex-direction: row;
+}
+.fourtpart .boxes{
+	width: 173px;
+	height: 175px;
+	background-color: white;
+	border: 1px solid grey;
+	box-sizing: border-box;
+	margin: 100px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 40px;
+	margin-top: -50px;
+	z-index: 1
+}
+.fourtpart .boxes:hover{
+	background-color: black;
+	color: white;
+}
+.fourtpart .boxes .transp{
+	display: none;   /*failed*/
+}
+.fourtpart .boxes .transp:hover{
+	display: block;   /*failed*/
+}
+.aboutadv{
+	background-color: white;
+	display: flex;
+	text-align: center;
+}
+.aboutadv .imgbx img{
+	width: 650px;
+	height: 500px;
+}
+.aboutadv .content{
+	padding: 0 100px 0 40px;
+}
+.aboutadv .content h1{
+	margin: 40px 0;
+	padding: 10px;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+.aboutadv .content h1 span{
+	font-weight: 700;
+}
+.aboutadv .content h2{
+	font-weight: 100;
+	font-size: 30px;
+}
+.aboutadv .content p{
+	margin: 30px 0;
+	font-size: 20px;
+}
+.aboutadv .buttonbx button{
+	width: 400px;
+	height: 60px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	margin: 0 5px 0 0;
+	text-transform: capitalize;
+	opacity: 0.9
+}
+.aboutadv .content .line{
+	height: 1px;
+	width: 350px;
+	background-color: grey;
+	margin-top: -20px;
+	margin-left: 105px;
+}
+.aboutadv .buttonbx button:hover{
+	opacity: 0.8
+}
+.browsebx{
+	background-color: white;
+}
+.browsebx h1{
+	text-transform: uppercase;
+	font-family: Open Sans, sans-serif;
+	font-weight: 100;
+	text-align: center;
+	padding-top: 70px;
+	margin-top: 0;
+}
+.browsebx h1 span{
+	font-weight: 700;
+}
+.browsebx p{
+	text-align: center;
+	font-size: 17px;
+	font-family: Open Sans, sans-serif;
+	padding: 30px 200px 0 200px;
+}
+.browsebx .line{
+	height: 1px;
+	width: 350px;
+	background-color: grey;
+	margin-left: 500px;
+}
+.container{
+	background-color: white;
+	margin-top: -18px;
+	padding: 50px 40px 0 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .imgbx{
+	position: relative;
+	background-color: white;
+	border: none;
+	margin: 10px;
+	box-sizing: border-box;
+	margin: 15px;
+}
+.container .imgbx .imgbox{
+	position: relative;
+}
+.container .imgbx .details{
+	position: absolute;
+	color: black;
+	height: 80px;
+	width: 285px;
+    top: 345px;
+    background: rgba(255,255,255,0.9);
+}
+.container .imgbx .details h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	margin: 0;
+	padding: 10px; 
+}
+.container .imgbx .details img{
+	padding-left: 10px;
+	margin: 0;
+}
+.container .imgbx .details:hover{
+	 background: rgba(0,0,0,0.9);
+	 color: white;
+	 width: 285px;
+	 height: 150px;
+	 top: 275px;
+	 transform: rotateX(5deg);
+	 transition: 1s;
+}
+.container .imgbx .details1{
+	position: absolute;
+	color: black;
+	height: 80px;
+	width: 285px;
+    top: 0;
+    background: rgba(255,255,255,0.9);
+}
+.container .imgbx .details1:hover{
+	 background: rgba(0,0,0,0.9);
+	 color: white;
+	 width: 285px;
+	 height: 150px;
+	 transform: rotateX(5deg);
+	 transition: 1s;
+}
+.container .imgbx .details1 h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 10px;
+	margin: 0;
+}
+.container .imgbx .details1 img{
+	padding-left: 10px;
+	margin: 0;
+}
+.container .imgbx .details1:hover{
+	 background: rgba(0,0,0,0.9);
+	 color: white;
+}
+.container .imgbx .pic1{
+	position: relative;
+	top: -80px;
+}
+.container .imgbx .details2{
+	position: absolute;
+	color: black;
+	height: 80px;
+	width: 285px;
+    top: 185px;
+    background: rgba(255,255,255,.9);
+}
+.container .imgbx .details2:hover{
+	 background: rgba(0,0,0,0.9);
+	 color: white;
+	 width: 285px;
+	 height: 150px;
+	 margin-top: -70px;
+	 transform: rotateX(5deg);
+	 transition: 1s;
+}
+.container .imgbx .details2 h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	margin: 0;
+	padding: 10px;
+}
+.container .imgbx .details2 img{
+	padding-left: 10px;
+	margin: 0;
+}
+.container .imgbx .details2:hover{
+	background: rgba(0,0,0,0.9);
+	color: white;
+}
+.container .imgbx .details3{
+	position: absolute;
+	color: black;
+	height: 80px;
+	width: 285px;
+    top: -80px;
+    background: rgba(255,255,255,.9);
+}
+.container .imgbx .details3:hover{
+	 background: rgba(0,0,0,0.9);
+	 color: white;
+	 width: 285px;
+	 height: 150px;
+	 transform: rotateX(5deg);
+	 transition: 1s;
+}
+.container .imgbx .details3 h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 10px;
+	margin: 0;
+}
+.container .imgbx .details3 img{
+	padding-left: 10px;
+	margin: 0;
+}
+.container .imgbx .details3:hover{
+	background: rgba(0,0,0,0.9);
+	color: white;
+}
+.seventhpart .another-back-img1 h1{
+	color: white;
+	font-weight: 100;
+	font-size: 38px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -500px;
+}
+.seventhpart .another-back-img1 h1 span{
+	font-weight: 700;
+}
+.seventhpart .another-back-img1 img{
+	width: 100%;
+	margin: 0;
+}
+.seventhpart .another-back-img1 .line{
+	position: relative;
+	width: 350px;
+	height: 1px;
+	background-color: white;
+	margin-left: 500px;
+}
+.seventhpart .boxbox{
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	margin-left: 70px;
+}
+.seventhpart .boxbox .boxes1{
+	width: 175px;
+	height: 173px;
+	border: 2px solid black;
+	background-color: rgba(0,0,0, 0.8);
+	margin: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+.seventhpart .boxbox .boxes1 img{
+	margin: 30px 50px 0 50px;
+}
+.seventhpart .boxbox .boxes1 p{
+	margin-top: 25px;
+	text-align: center;
+}
+.seventhpart .boxbox .boxes1:hover{
+	background-color: black;
+}
+.trips{
+	margin-top: 300px;
+	background-color: white; 
+	position: relative;
+}
+.trips h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	padding-top: 50px;
+}
+.trips h1 span{
+	font-weight: 700;
+}
+.trips p{
+	text-align: center;
+	font-size: 17px;
+	padding: 30px 250px 0 250px;
+}
+.trips .line{
+	width: 400px;
+	height: 1px;
+	background-color: grey;
+	margin: 15px 0 0 470px;
+}
+.trips:before{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 250px;
+	top:-200px;
+	left: 0;
+	background: white;
+	transform: skewY(-7deg);
+}
+.trips:after{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 250px;
+	top:-200px;
+	right: 0;
+	background: white;
+	transform: skewY(7deg);
+}
+.wildlife{
+	background-color: white;
+	margin-top:-20px;
+}
+.wildlife h2{
+	text-transform: uppercase;
+	padding-top: 60px;
+	margin-left: 50px;
+}
+.wildlife p{
+	font-size: 17px;
+	margin: 15px 720px 0 50px;
+}
+.viewtrp{
+	margin-left: 50px;
+	background-color: rgba(0,0,0, 0.8);
+	width: 170px;
+	height: 45px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	cursor: pointer;
+}
+.viewtrp h1{
+	font-size: 20px;
+	font-weight: 100;
+}
+.viewtrp:hover{
+	opacity: 0.6;
+	transition: 0.5s;
+}
+.imgbox{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+}
+.imgbox .box1{
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	margin-top: 30px;
+	box-sizing: border-box;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.imgbox .box1 .picture img{
+	max-width: 100%;
+	height: 250px;
+}
+.imgbox .box2{
+	width: 570px;
+	height: 771px;
+	background-color: white;
+	margin-left: 90px;
+	margin-top: -180px
+}
+.imgbox .box1 .decorate{
+	width: 150px;
+	height: 40px;
+	background: rgba(0,0,0,0.9);
+	color: white;
+	position: relative;
+	top: -58px;
+	text-align: center;
+	line-height: 40px;
+	z-index: 1;
+}
+.imgbox .box1 .decorate h1{
+	font-weight: 100;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.imgbox .box1 .somedetails{
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	opacity: 0.4;
+	margin-top: -290px;
+	margin-left: 25px;
+	display: none;
+}
+.imgbox .box1:hover .somedetails{
+	display: block;
+	transition: 1s;
+}
+.imgbox #change{
+	margin-top: -250px;
+}
+.eightpart{
+	background-color:white;
+}
+.eightpart .plane-img img{
+	margin-top: 100px;
+	width: 100%;
+	opacity: 0.8;
+}
+.eightpart .subscripe{
+	position: absolute;
+	margin: 0;
+}
+.eightpart .subscripe h1 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 100;
+	position: relative;
+	top: -460px;
+	right: 200px;
+	float: right;
+}
+.eightpart .subscripe h1 span{
+	font-weight: 700;
+}
+.eightpart .subscripe .decore2{
+	width: 350px;
+	height: 1px;
+	background-color: white;
+	position: absolute;
+	top: -380px;
+	left: 715px;
+}
+.eightpart .subscripe p{
+	color: white;
+	font-weight: 100;
+	font-size: 18px;
+	position: relative;
+	top: -410px;
+	float: right;
+	text-align: center;
+	padding-right: 80px;
+	padding-left: 530px;
+}
+.eightpart .subscripe input{
+	width: 500px;
+	height: 50px;
+	background-color: black;
+	opacity: 0.8;
+	border: 1px solid white;
+	position: absolute;
+	top: -180px;
+	left: 550px;
+	color: white;
+	padding-left: 15px;
+}
+.eightpart .sub{
+	width: 170px;
+	height: 50px;
+	background-color: black;
+	position: relative;
+	top: -180px;
+	right: 100px;
+	float: right;
+}
+.eightpart .sub h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 20px;
+	text-align: center;
+}
+.eightpart .sub:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.ninthpart{
+	background-color: #DBE6ED;
+	padding-top: 100px;
+	margin: 0;
+	position: relative;
+}
+.ninthpart:before{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height:150px;
+	top:-45px;
+	left: 0;
+	background: #DBE6ED;
+	transform: skewY(-7deg);
+}
+.ninthpart:after{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height:150px;
+	top:-45px;
+	right: 0;
+	background: #DBE6ED;
+	transform: skewY(7deg);
+}
+.ninthpart .posts{
+	text-align: center;
+}
+.ninthpart .posts h1{
+	text-transform: uppercase;
+	font-weight: 100;
+}
+.ninthpart .posts h1 span{
+	font-weight: 700;
+}
+.ninthpart .posts .line{
+	background-color: rgba(0,0,0, 0.6);
+	width: 350px;
+	height: 1px;
+	margin-top: 10px;
+	margin-left: 495px;
+}
+.ninthpart .posts p{
+	margin: 15px 300px 0 300px;
+}
+.two-img-box{
+	background-color: #DBE6ED;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.two-img-box .part_one{
+	margin-top: 60px;
+	margin-left: 100px;
+	margin-right: 250px;
+	position: relative;
+	height: 400px;
+}
+.two-img-box .whatTravel{
+	width: 280px;
+	height: 250px;
+	background-color: white;
+	border-bottom: 4px inset grey;
+	position: absolute;
+	top: 25px;
+	left: 250px;
+}
+.two-img-box .whatTravel h4{
+	text-transform: uppercase;
+	padding:10px;
+}
+.two-img-box .whatTravel p{
+	padding:10px;
+	font-size: 15px;
+}
+.two-img-box .whatTravel .learnmore{
+	width: 150px;
+	height: 45px;
+	background-color: black;
+	opacity: 0.9;
+	margin: 10px 0 0 10px;
+	cursor: pointer;
+}
+.two-img-box .whatTravel .learnmore h4{
+	color: white;
+	text-align: center;
+	font-weight: 100;
+}
+.two-img-box .whatTravel .learnmore:hover{
+	opacity: 0.6;
+	transition: 1s;
+}
+.two-img-box .part_one .smallimg img{
+	margin-left: 10px;
+}
+.team{
+	background-color: white;
+	padding-top: 50px;
+}
+.team h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+}
+.team h1 span{
+	font-weight: 700;
+}
+.team p{
+	text-align: center;
+	font-size: 17px;
+	margin: 20px 270px 0 270px;
+}
+.team .line{
+	width: 300px;
+	height: 1px;
+	background-color: grey;
+	margin-left: 520px;
+}
+.lastimgbx{
+	background-color: white;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	padding-top: 60px;
+	padding-left: 60px;
+}
+.lastimgbx .imgrow{
+	width: 380px;
+	height: 568px;
+	border: 2px inset white;
+	margin: 15px;
+	box-sizing: border-box;
+}
+.lastimgbx .imgrow .detpic{
+	background: white;
+	opacity: 0.9;
+	width: 380px;
+	height: 100px;
+	margin-top: -124px;
+	border-bottom: 2px inset grey;
+}
+.lastimgbx .imgrow .detpic h2{
+	padding: 15px;
+	text-transform: capitalize;
+	font-weight: 100;
+}
+.lastimgbx .imgrow .detpic img{
+	margin-top: -15px;
+	margin-left: 10px;
+}
+.partners{
+	padding-top: 60px;
+	background-color: white;
+}
+.partners .finish h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+.partners .finish h1 span{
+	font-weight: 700;
+}
+.partners .line{
+	width: 350px;
+	height: 1px;
+	background-color: black;
+	opacity: 0.4;
+	margin: 30px 0 0 500px;
+}
+.finishpart{
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 60px;
+	padding-top: 50px;
+	position: relative;
+	height: 250px;
+}
+.finishpart .fourbx{
+	width: 280px;
+	height: 170px;
+	background-color: white;
+	border: 1px solid grey;
+	margin: 15px;
+	box-sizing: border-box;
+	border-radius: 30px;
+}
+.finishpart .fourbx img{
+	padding-left: 10px;
+	margin-top: -40px;
+}
+.finishpart:before{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height:200px;
+	top: 300px;
+	left: 0;
+	background: white;
+	transform: skewY(7deg);
+	z-index: 1;
+}
+.finishpart:after{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height:200px;
+	top: 300px;
+	right: 0;
+	background: white;
+	transform: skewY(-7deg);
+	z-index: 1;
+}
+.lastprg{
+	background-color: white;
+	padding-top: 130px;
+}
+.lastprg .bigger img{
+	width: 100%;
+}
+.contacts{
+	display: flex;
+	flex-direction: row;
+	margin-top: -550px;
+	margin-left: 100px;
+}
+.contacts .some-information{
+	width: 230px;
+	height: 400px;
+}
+.contacts #bigger_box{
+	width: 260px;
+}
+.contacts .some-information .contact-us h2{
+	text-transform: uppercase;
+	color: white;
+}
+.contacts .some-information .more-details{
+	display: flex;
+}
+.contacts .some-information .more-details p{
+	color: white;
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 17px;
+}
+.contacts .some-information .more-details img{
+	width: 24px;
+	height: 24px;
+	margin: 5px;
+}
+.contacts .some-information .more-details .row1{
+	width: 36px;
+	height: 24px;
+}
+.contacts .some-information .about-us h2{
+	color: white;
+	text-transform: uppercase;
+}
+.contacts .some-information .more_details{
+	display: flex;
+	flex-direction: row;
+}
+.contacts .some-information .more_details img{
+	width: 16px;
+	height: 16px;
+	margin-top: 5px;
+}
+.contacts .some-information .more_details p{
+	color: white;
+	text-transform: capitalize;
+	font-size: 17px;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+.contacts .some-information .more_details p:hover{
+	color: black;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.small_boxes{
+	display: flex;
+	flex-direction: row;
+	margin-left: 100px;
+}
+.small_boxes .smallbx{
+	width: 50px;
+	height: 50px;
+	border: 1px solid white;
+	margin: 35px 15px 0 0;
+}
+.small_boxes .smallbx:hover{
+	border: 1px solid black;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+.small_boxes .smallbx img{
+	margin: 8px;
+}
+.visa{
+	position: relative;
+}
+.visa img{
+	position: absolute;
+	margin-top: -50px;
+	margin-left: 880px;
+}
+.footer{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	margin-top: 55px; 
+	padding-top: 20px;
+}
+.footer .rights h4{
+	color: white;
+	font-weight: 100;
+	float: left;
+	margin-left: 50px;
+}
+.footer .rights h4 span{
+	color: white;
+}
+.footer .rights h4 span:hover{
+	color: grey;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.footer .homefinish{
+	display: flex;
+	flex-direction: row;
+	float: right;
+	margin-right: 50px;
+}
+.footer .homefinish h4{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.footer .homefinish h4:hover{
+	color: grey;
+	transition: 0.5s;
+}
